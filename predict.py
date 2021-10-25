@@ -23,10 +23,10 @@ from sklearn.model_selection import GridSearchCV
 
 
 #%%% Data Import and Combination
-os.chdir('C:\\Users\\bradm\\OneDrive\\Projects\\Student_Predictor')
+os.chdir('C:\\Users\\bradm\\OneDrive\\Projects\\Hold_Predictor')
 
 rest_df = pd.read_csv('Active Students Restrictions.csv') # Restrictions
-df = pd.read_csv('Active Students By Major.csv') # main
+df = pd.read_csv('Active Students By Major.xlsx') # main
 
 #%% data cleaning
 df.rename(columns = {'PersonID':'StudentID'}, inplace = True) # Rename 'PersonID' to 'StudentID' in df
